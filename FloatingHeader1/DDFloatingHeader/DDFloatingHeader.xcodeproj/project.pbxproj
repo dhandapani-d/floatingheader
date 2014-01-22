@@ -19,6 +19,13 @@
 		9A3CE945188D249500867FD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3CE92D188D249500867FD0 /* UIKit.framework */; };
 		9A3CE94D188D249500867FD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CE94B188D249500867FD0 /* InfoPlist.strings */; };
 		9A3CE94F188D249500867FD0 /* DDFloatingHeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CE94E188D249500867FD0 /* DDFloatingHeaderTests.m */; };
+		9A3CE95A188D401300867FD0 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CE939188D249500867FD0 /* DDAppDelegate.m */; };
+		9A3CE95B188D401300867FD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CE935188D249500867FD0 /* main.m */; };
+		9A3CE95D188D401300867FD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3CE92B188D249500867FD0 /* CoreGraphics.framework */; };
+		9A3CE95E188D401300867FD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3CE92D188D249500867FD0 /* UIKit.framework */; };
+		9A3CE95F188D401300867FD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3CE929188D249500867FD0 /* Foundation.framework */; };
+		9A3CE961188D401300867FD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CE932188D249500867FD0 /* InfoPlist.strings */; };
+		9A3CE962188D401300867FD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CE93B188D249500867FD0 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,8 @@
 		9A3CE94A188D249500867FD0 /* DDFloatingHeaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DDFloatingHeaderTests-Info.plist"; sourceTree = "<group>"; };
 		9A3CE94C188D249500867FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A3CE94E188D249500867FD0 /* DDFloatingHeaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDFloatingHeaderTests.m; sourceTree = "<group>"; };
+		9A3CE966188D401300867FD0 /* DDFloatingHeader copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DDFloatingHeader copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3CE967188D401300867FD0 /* DDFloatingHeader copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DDFloatingHeader copy-Info.plist"; path = "/Users/dhandapani/iLearn/iOS/Dhandapani Git/FloatingHeader1/DDFloatingHeader/DDFloatingHeader copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A3CE95C188D401300867FD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3CE95D188D401300867FD0 /* CoreGraphics.framework in Frameworks */,
+				9A3CE95E188D401300867FD0 /* UIKit.framework in Frameworks */,
+				9A3CE95F188D401300867FD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +100,7 @@
 				9A3CE948188D249500867FD0 /* DDFloatingHeaderTests */,
 				9A3CE928188D249500867FD0 /* Frameworks */,
 				9A3CE927188D249500867FD0 /* Products */,
+				9A3CE967188D401300867FD0 /* DDFloatingHeader copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +109,7 @@
 			children = (
 				9A3CE926188D249500867FD0 /* DDFloatingHeader.app */,
 				9A3CE941188D249500867FD0 /* DDFloatingHeaderTests.xctest */,
+				9A3CE966188D401300867FD0 /* DDFloatingHeader copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +203,23 @@
 			productReference = 9A3CE941188D249500867FD0 /* DDFloatingHeaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9A3CE958188D401300867FD0 /* TestBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A3CE963188D401300867FD0 /* Build configuration list for PBXNativeTarget "TestBot" */;
+			buildPhases = (
+				9A3CE959188D401300867FD0 /* Sources */,
+				9A3CE95C188D401300867FD0 /* Frameworks */,
+				9A3CE960188D401300867FD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestBot;
+			productName = DDFloatingHeader;
+			productReference = 9A3CE966188D401300867FD0 /* DDFloatingHeader copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +248,7 @@
 			projectRoot = "";
 			targets = (
 				9A3CE925188D249500867FD0 /* DDFloatingHeader */,
+				9A3CE958188D401300867FD0 /* TestBot */,
 				9A3CE940188D249500867FD0 /* DDFloatingHeaderTests */,
 			);
 		};
@@ -233,6 +272,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A3CE960188D401300867FD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3CE961188D401300867FD0 /* InfoPlist.strings in Resources */,
+				9A3CE962188D401300867FD0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,6 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3CE94F188D249500867FD0 /* DDFloatingHeaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A3CE959188D401300867FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3CE95A188D401300867FD0 /* DDAppDelegate.m in Sources */,
+				9A3CE95B188D401300867FD0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +480,32 @@
 			};
 			name = Release;
 		};
+		9A3CE964188D401300867FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DDFloatingHeader/DDFloatingHeader-Prefix.pch";
+				INFOPLIST_FILE = "DDFloatingHeader copy-Info.plist";
+				PRODUCT_NAME = "DDFloatingHeader copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9A3CE965188D401300867FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DDFloatingHeader/DDFloatingHeader-Prefix.pch";
+				INFOPLIST_FILE = "DDFloatingHeader copy-Info.plist";
+				PRODUCT_NAME = "DDFloatingHeader copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +533,15 @@
 				9A3CE957188D249500867FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		9A3CE963188D401300867FD0 /* Build configuration list for PBXNativeTarget "TestBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3CE964188D401300867FD0 /* Debug */,
+				9A3CE965188D401300867FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
